@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color:#3A1238;
+}
+
+.nav img {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+    margin-left:475px ;
+    gap: 10px;
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 180px;
+}
+
+input {
+    height: 16px;
+    width: 320px;
+    border-radius: 9px;
+    padding: 6px;
+    border: 2px solid #D0C3DF;
+}
+
+nav {
+    padding: 5px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid #D0C3DF ;
+    align-items: center;
+}
+
+.cards button {
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 7px;
+    width: 180px;
+    border: 0;
+    color: #ffffff;
+}
+
+#botaonav {
+    text-align: center;
+    border-radius: 12px;
+    width: 90px;
+    padding: 7px;
+    background: #AEE4E8;
+}
+
+button {
+    border-radius: 5px;
+    padding: 7px;
+    width: 200px;
+    border: 0;
+    color: #ffffff;
+    background: #6F1577;
+}
+
+.cards {
+    display:flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin: 70px;
+}
+
+h1 {
+    margin-right: 720px;  
+}
+
+.China, .Coreia, .Taiwan{
+    color: #3A1238;
+    height: 220px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+.Taiwan{
+    background: #FDE8E5;
+    border: 1px solid #D0C3DF;
+}
+
+.Taiwan img, .China img,.Coreia img {
+    height: 116px;
+    width: 140px;
+    margin-left: 30px;
+}
+
+.Coreia {
+    background: #D0C3DF;
+    border: 1px solid #D0C3DF;
+}
+
+.China {
+    background: #AEE4E8;
+    border: 1px solid #D0C3DF;
+}
+
+.pais {
+    color: #747373;
+    margin-bottom: 2px;
+}
+
+.partedecima {
+    background: #AEE4E8;
+    height: 320px;
+    padding: 10px;
+}
+
+#telao {
+    display: flex;    
+}
+
+.video {
+    background: #ffffff;
+    padding: 7px;
+    border: 1px solid #3A1238;
+    width: 420px;
+    height: 240px;
+    border-radius: 12px;
+}
+
+video {
+    width: 420px;
+    
+}
+
+
+.texto {
+    margin-right: 290px;
+    margin-bottom: 70px;
+    font-size: 25px;
+}
+
+.texto h3 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.fimPagina a {
+    color: #3A1238;
+}
+
+.fimPagina h2 {
+    display: block;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 820px;
+}
+
+.fimPagina {
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.bloco {
+    width: 90px;
+    border-radius: 6px;
+    padding: 11px;
+    border:2px solid #3A1238;
+    background: #FDE8E5;
+    text-align: center;
+}
+
+.bloco2 {
+    width: 90px;
+    border-radius: 6px;
+    padding: 11px;
+    border:2px solid #3A1238;
+    background: #D0C3DF;
+    text-align: center;
+}
+.bloco3 {
+    width: 90px;
+    border-radius: 6px;
+    padding: 11px;
+    border:2px solid #3A1238;
+    background: #AEE4E8;
+    text-align: center;
+}
+
+.caixa {
+    border-radius: 0 0 7px 7px;
+    height:100px;
+    width: 200px;
+    background: #ffffff;
+}
+
+.caixa p, .caixa h5 {
+    margin-left: 4px;
+}
