@@ -1,0 +1,56 @@
+body{
+    background-color: #ffffff;
+}
+
+.Titulo{
+    font-size: 30px;
+    color: #3a1238;
+    text-align: center;
+    margin-top: 20px;
+}
+.ajuda{
+    font-size: 30px;
+    color: #aee4eb;
+    text-align: center;
+    margin-top: 20px;
+}
+.p{
+    font-size: 20px;
+    color: #3a1238;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 30px;
+    color: #3a1238;
+
+}
+.card{
+    background: #FDEBE5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    border-radius: 8px;
+  
+}
+
+.meio{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+}
+
+
+a{
+    text-decoration: none;
+    color: #3a1238;
+}   
+
+.atendimento{
+    display: flex;
+    align-items: center;
+
+}
