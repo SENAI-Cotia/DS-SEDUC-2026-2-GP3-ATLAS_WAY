@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #401b3d;
+    background-color: #FDE8E5;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 200px;
+     height: auto;
+}
+
+h1{
+    font-size: 22px;
+    margin: 30px 0 20px;
+    padding: 20px;
+}
+
+.cima {
+  padding: 6px;
+  align-items: center;
+  display: flex;
+  background-color: #ffffff;
+  gap: 1600px;
+  margin-bottom: 30px;
+}
+
+.icones {
+  display: flex;
+  gap: 15px;
+}
+
+.icones i {
+  color: black;
+}
+h4 {
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    padding: 15px;
+}
+
+.product-description {
+ float: left;
+  width: 63%;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #b49bb1;
+  border-radius: 12px;
+}
+.product-description img {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.product-description p {
+  font-size: 14px;
+  margin: 14px;
+}
+    
+.total-price {
+  float: left;
+  width: 34%;
+  margin-left: 3%;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #b49bb1;
+  border-radius: 12px;
+}
+
+.total-price h2 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.total-price p {
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.total-price hr {
+  height: 1px;
+  border: 1px solid #b49bb1;
+  margin: 20px 0;
+}   
+
+button {
+  width: 100%;
+  background-color: #40133F;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 15px;
+  margin: 8px 0;
+}
