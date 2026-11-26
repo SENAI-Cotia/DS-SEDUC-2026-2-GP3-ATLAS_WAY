@@ -1,36 +1,60 @@
+
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family:"Poppins", sans-serif;
-    color: #421044;
+    font-family: "Poppins", sans-serif;
+    color: #3A1238;
+    background: #eeeeee;
+}
+
+main {
+    background: #FFFFFF;
+    max-width: 1100px;
+    margin: auto;
 }
 
 
+
 header {
-    padding: 25px;
+    padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h2 {
-    font-size: 22px;
+header img {
+    width: 180px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 nav a {
     text-decoration: none;
-    color: #421044;
-    margin-left: 15px;
-    font-size: 12px;
+    color: #3A1238;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+nav .conta {
+    background: #D0C3DF;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 
+
 .inicio {
-    padding: 50px;
-    height: 280px;
+    padding: 45px 35px;
+    min-height: 270px;
 }
 
 .inicio h1 {
@@ -38,66 +62,92 @@ nav a {
     line-height: 1.3;
 }
 
-.inicio h1 {
-    text-decoration: underline;
-    text-decoration-color: #a8e2e5;
+.inicio p {
+    font-size: 12px;
+    margin-top: 12px;
+    max-width: 400px;
+    line-height: 1.5;
 }
 
-.inicio p {
-    font-size: 13px;
-    margin-top: 15px;
-}
 
 
 .catalogo {
-    padding: 30px;
+    padding: 30px 35px 45px;
+}
+
+.catalogo h5,
+.funciona h5,
+.sobre h5 {
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 .catalogo h2 {
-    margin: 15px 0 25px;
+    margin-bottom: 25px;
     font-size: 25px;
     line-height: 1.3;
 }
 
 .produtos {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .card {
-    border: 1px solid #d5c5d3;
+    border: 1px solid #D0C3DF;
     border-radius: 12px;
     flex: 1;
     overflow: hidden;
+    background: #FFFFFF;
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
 .imagem {
-    background: #fde9e7;
-    height: 120px;
+    background: #FDEBE5;
+    height: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .card h4 {
-    font-size: 10px;
-    margin: 12px 8px;
+    font-size: 9px;
+    margin: 12px 10px 5px;
 }
 
 .card p {
-    font-size: 10px;
-    margin: 8px;
-    line-height: 1.4;
+    font-size: 9px;
+    margin: 5px 10px 15px;
+    line-height: 1.5;
 }
 
+
+
 .funciona {
-    background: #fde9e7;
-    padding: 40px;
+    background: #FDEBE5;
+    padding: 35px;
 }
 
 .funciona h2 {
-    margin: 15px 0 35px;
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 12px 0 35px;
 }
 
 .etapas {
@@ -106,49 +156,72 @@ nav a {
     text-align: center;
 }
 
+.etapas div {
+    position: relative;
+    z-index: 1;
+}
+
 .etapas span {
-    background: #a8e2e5;
+    background: #AEE4E8;
+    border: 1px solid #3A1238;
     border-radius: 50%;
-    padding: 15px 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .etapas p {
-    font-size: 10px;
-    margin-top: 15px;
+    font-size: 9px;
+    margin-top: 10px;
 }
+
 
 
 .sobre {
-    background: #d1c1dc;
-    padding: 40px;
+    background: #D0C3DF;
+    padding: 35px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .sobre h2 {
-    margin: 15px 0;
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 12px;
 }
 
 .sobre p {
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 11px;
+    line-height: 1.6;
     max-width: 400px;
 }
 
-.logo-final {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.logo-final h2 {
-    margin: 5px;
+.logo-final img {
+    width: 190px;
 }
 
 
 
 footer {
-    padding: 20px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 10px;
+    gap: 10px;
+    font-size: 9px;
 }
+
+footer img {
+    width: 100px;
+}
+
+
