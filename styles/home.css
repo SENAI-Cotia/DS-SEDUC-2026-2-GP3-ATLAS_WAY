@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +15,6 @@ main {
     background: #FFFFFF;
     max-width: 1100px;
     margin: auto;
-
-
 }
 
 
@@ -53,7 +50,6 @@ nav .conta {
 }
 
 
-
 .inicio {
     padding: 45px 35px;
     min-height: 270px;
@@ -70,6 +66,7 @@ nav .conta {
     max-width: 400px;
     line-height: 1.5;
 }
+
 
 
 
@@ -108,7 +105,6 @@ nav .conta {
 .card:hover {
     transform: translateY(-5px);
 }
-
 
 
 
@@ -183,6 +179,7 @@ nav .conta {
 
 
 
+
 .sobre {
     background: #D0C3DF;
     padding: 35px;
@@ -213,6 +210,7 @@ nav .conta {
 
 
 
+
 footer {
     padding: 12px 20px;
     display: flex;
@@ -225,5 +223,4 @@ footer {
 footer img {
     width: 100px;
 }
-
 
