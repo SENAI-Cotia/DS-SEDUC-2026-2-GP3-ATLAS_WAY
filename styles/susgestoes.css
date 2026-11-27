@@ -83,14 +83,16 @@ button {
 }
 
 h1 {
+    margin-left:20px  ;
     margin-right: 720px;  
 }
 
 .China, .Coreia, .Taiwan{
     color: #3A1238;
-    height: 220px;
+    height: 222px;
     width: 200px;
     border-radius: 7px;
+    font-size: 13px;
 }
 
 .Taiwan{
@@ -100,7 +102,7 @@ h1 {
 
 .Taiwan img, .China img,.Coreia img {
     height: 116px;
-    width: 140px;
+    width: 120px;
     margin-left: 30px;
 }
 
@@ -117,6 +119,7 @@ h1 {
 .pais {
     color: #747373;
     margin-bottom: 2px;
+    font-size: 10px;
 }
 
 .partedecima {
@@ -161,6 +164,11 @@ video {
     color: #3A1238;
 }
 
+h2 {
+    margin-left: 20px;
+
+}
+
 .fimPagina h2 {
     display: block;
     font-weight: bold;
@@ -169,7 +177,6 @@ video {
 }
 
 .fimPagina {
-    border:1px solid red;
     margin-top: 30px;
     margin-left: 55px;
     margin-bottom: 120px;
