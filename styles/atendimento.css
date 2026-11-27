@@ -1,56 +1,486 @@
-body{
-    background-color: #ffffff;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.Titulo{
-    font-size: 30px;
-    color: #3a1238;
-    text-align: center;
-    margin-top: 20px;
-}
-.ajuda{
-    font-size: 30px;
-    color: #aee4eb;
-    text-align: center;
-    margin-top: 20px;
-}
-.p{
-    font-size: 20px;
-    color: #3a1238;
-    text-align: center;
-    margin-top: 20px;
+:root {
+    --roxo: #3a1238;
+    --roxo-escuro: #68136e;
+    --rosa: #fdebe8;
+    --azul: #aee4e8;
+    --lilas: #d0c3df;
+    --cinza: #766b76;
 }
 
-h1{
-    font-size: 30px;
-    color: #3a1238;
-
-}
-.card{
-    background: #FDEBE5;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
-    border-radius: 8px;
-  
+body {
+    min-width: 320px;
+    background: #fff;
+    color: var(--roxo);
+    font-family: "Poppins", sans-serif;
 }
 
-.meio{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid #ccc;
-}
-
-
-a{
+a {
+    color: inherit;
     text-decoration: none;
-    color: #3a1238;
-}   
+}
 
-.atendimento{
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.cabecalho {
+    min-height: 64px;
+    padding: 7px clamp(14px, 4vw, 48px);
     display: flex;
     align-items: center;
+    gap: clamp(12px, 3vw, 38px);
+    border-bottom: 1px solid #e8e0e8;
+}
 
+.logo img {
+    display: block;
+    width: 132px;
+    height: auto;
+}
+
+.navegacao,
+.atalhos {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao {
+    gap: 20px;
+}
+
+.navegacao a {
+    padding: 5px 9px;
+    border-radius: 13px;
+    font-size: 10px;
+}
+
+.navegacao a.atual {
+    background: var(--azul);
+    font-weight: 600;
+}
+
+.busca {
+    width: min(230px, 25vw);
+    height: 28px;
+    margin-left: auto;
+    display: flex;
+    border: 1px solid #bba8c7;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.busca input {
+    width: 100%;
+    min-width: 0;
+    padding: 0 7px;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    font-size: 8px;
+}
+
+.busca button {
+    width: 27px;
+    flex: 0 0 27px;
+    border: 0;
+    background: #fff;
+    color: var(--roxo);
+    font-size: 18px;
+}
+
+.atalhos {
+    gap: 6px;
+}
+
+.atalhos a {
+    width: 23px;
+    height: 23px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.ajuda {
+    min-height: 91px;
+    padding: 10px 16px 12px;
+    background: var(--rosa);
+    text-align: center;
+}
+
+.ajuda h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ajuda h1 span {
+    padding: 2px 9px;
+    border-radius: 6px;
+    background: var(--azul);
+    color: #fff;
+}
+
+.ajuda > p {
+    margin: 2px 0 5px;
+    font-size: 9px;
+}
+
+.busca-ajuda {
+    width: min(330px, 90%);
+    height: 27px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #bca9c6;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.busca-ajuda input {
+    width: 100%;
+    min-width: 0;
+    padding: 0 8px;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    font-size: 8px;
+}
+
+.busca-ajuda button {
+    width: 28px;
+    flex: 0 0 28px;
+    border: 0;
+    background: #fff;
+    color: var(--roxo);
+    font-size: 17px;
+}
+
+.assuntos,
+.perguntas {
+    width: min(900px, 100%);
+    margin: 14px auto 0;
+    padding: 0 16px;
+}
+
+.assuntos h2,
+.perguntas h2 {
+    margin: 0 0 7px 7px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.grade-assuntos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.card-assunto {
+    min-height: 73px;
+    padding: 8px 9px;
+    border: 1px solid #bba8c7;
+    border-radius: 8px;
+}
+
+.assunto-rosa {
+    background: var(--rosa);
+}
+
+.assunto-azul {
+    background: var(--azul);
+}
+
+.assunto-lilas {
+    background: var(--lilas);
+}
+
+.card-assunto h3 {
+    margin-bottom: 4px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.card-assunto p {
+    font-size: 7px;
+    line-height: 1.4;
+}
+
+.perguntas {
+    margin-top: 15px;
+}
+
+.perguntas h2 {
+    margin-bottom: 7px;
+}
+
+.lista-perguntas {
+    display: grid;
+    gap: 9px;
+}
+
+.pergunta {
+    min-height: 46px;
+    padding: 7px 10px;
+    border: 1px solid #ddd2e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 0 #e9dff0;
+}
+
+.pergunta h3 {
+    margin-bottom: 2px;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.pergunta p {
+    color: #554f58;
+    font-size: 7px;
+    line-height: 1.45;
+}
+
+.contato {
+    margin-top: 14px;
+    padding: 9px 16px 14px;
+    background: #e7d4eb;
+    text-align: center;
+}
+
+.contato > h2 {
+    margin-bottom: 7px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.opcoes-contato {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.card-contato {
+    width: min(180px, 45%);
+    min-height: 57px;
+    padding: 9px 12px;
+    border: 1px solid #a692b0;
+    border-radius: 8px;
+    background: #fff;
+    text-align: left;
+}
+
+.card-contato h3 {
+    margin-bottom: 4px;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.card-contato p {
+    font-size: 7px;
+    line-height: 1.4;
+}
+
+@media (min-width: 900px) {
+    .ajuda {
+        padding-top: 18px;
+    }
+
+    .ajuda h1 {
+        font-size: 24px;
+    }
+
+    .card-assunto {
+        min-height: 100px;
+        padding: 12px;
+    }
+
+    .card-assunto h3,
+    .pergunta h3 {
+        font-size: 11px;
+    }
+
+    .card-assunto p,
+    .pergunta p {
+        font-size: 10px;
+    }
+
+    .pergunta {
+        min-height: 58px;
+        padding: 10px 13px;
+    }
+
+    .contato > h2 {
+        font-size: 13px;
+    }
+
+    .card-contato {
+        min-height: 72px;
+    }
+
+    .card-contato h3,
+    .card-contato p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 520px) {
+    .cabecalho {
+        min-height: 38px;
+        padding: 4px 6px;
+        gap: 5px;
+    }
+
+    .logo img {
+        width: 82px;
+    }
+
+    .navegacao {
+        gap: 3px;
+    }
+
+    .navegacao a {
+        padding: 4px 6px;
+        font-size: 7px;
+        white-space: nowrap;
+    }
+
+    .busca {
+        width: 76px;
+        height: 20px;
+    }
+
+    .busca input {
+        padding: 0 3px;
+        font-size: 6px;
+    }
+
+    .busca button {
+        width: 18px;
+        flex-basis: 18px;
+        font-size: 13px;
+    }
+
+    .atalhos {
+        gap: 2px;
+    }
+
+    .atalhos a {
+        width: 16px;
+        height: 18px;
+        font-size: 11px;
+    }
+
+    .ajuda {
+        min-height: 61px;
+        padding: 7px 8px;
+    }
+
+    .ajuda h1 {
+        font-size: 14px;
+    }
+
+    .ajuda > p {
+        margin: 1px 0 3px;
+        font-size: 7px;
+    }
+
+    .busca-ajuda {
+        width: min(230px, 80%);
+        height: 17px;
+    }
+
+    .busca-ajuda input {
+        font-size: 6px;
+    }
+
+    .busca-ajuda button {
+        width: 20px;
+        flex-basis: 20px;
+        font-size: 13px;
+    }
+
+    .assuntos,
+    .perguntas {
+        margin-top: 8px;
+        padding: 0 11px;
+    }
+
+    .assuntos h2,
+    .perguntas h2 {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .grade-assuntos {
+        gap: 6px;
+    }
+
+    .card-assunto {
+        min-height: 57px;
+        padding: 6px;
+    }
+
+    .card-assunto h3 {
+        margin-bottom: 2px;
+        font-size: 6px;
+    }
+
+    .card-assunto p {
+        font-size: 5.5px;
+        line-height: 1.35;
+    }
+
+    .perguntas {
+        margin-top: 9px;
+    }
+
+    .lista-perguntas {
+        gap: 7px;
+    }
+
+    .pergunta {
+        min-height: 32px;
+        padding: 5px 7px;
+    }
+
+    .pergunta h3 {
+        font-size: 6.5px;
+    }
+
+    .pergunta p {
+        font-size: 5.5px;
+    }
+
+    .contato {
+        margin-top: 8px;
+        padding: 6px 10px 10px;
+    }
+
+    .contato > h2 {
+        margin-bottom: 5px;
+        font-size: 8px;
+    }
+
+    .opcoes-contato {
+        gap: 8px;
+    }
+
+    .card-contato {
+        min-height: 50px;
+        padding: 7px 9px;
+    }
+
+    .card-contato h3,
+    .card-contato p {
+        font-size: 6px;
+    }
 }

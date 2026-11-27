@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulte seus pedidos, favoritos e endereços na Atlasway.">
+    <title>Minha conta | Atlasway</title>
+    <link rel="stylesheet" href="../styles/minhaConta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topo">
+        <a class="marca" href="home.html">
+            <img src="../img/logo.png" alt="Atlasway Comércio Global">
+        </a>
+
+        <nav class="navegacao" >
+            <a href="home.html">Início</a>
+            <a href="secoes.html">Seções</a>
+            <a href="atendimento.html">Atendimento</a>
+        </nav>
+
+        <div class="acoes-topo">
+            <a class="icone-topo" href="minhaConta.html" >⚙</a>
+            <a class="icone-topo selecionado" href="minhaConta.html" >♙</a>
+            <a class="icone-topo" href="pagamento.html" >🛒</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="boas-vindas">
+            <div class="avatar" >G</div>
+            <div>
+                <h1 id="titulo-boas-vindas">Olá, <span>Guilherme</span></h1>
+                <p>Cliente desde março de 2025 <span>·</span> guilherme@email.com</p>
+            </div>
+        </section>
+
+        <div class="painel">
+            <div class="menu-conta">
+                <nav>
+                    <a class="ativo" href="minhaConta.html" >Configurações</a>
+                    <a href="#pedidos">Meus pedidos</a>
+                    <a href="rastreamento.html">Rastreamento</a>
+                    <a href="#favoritos">Favoritos</a>
+                    <a href="#dados-pessoais">Dados pessoais</a>
+                    <a class="sair" href="login.html">Sair</a>
+                </nav>
+            </div>
+
+            <div class="conteudo-conta">
+                <section class="resumo" >
+                    <article class="cartao-resumo resumo-pedidos">
+                        <strong>2</strong>
+                        <span>Pedidos em andamento</span>
+                    </article>
+                    <article class="cartao-resumo resumo-favoritos" id="favoritos">
+                        <strong>8</strong>
+                        <span>Favoritos</span>
+                    </article>
+                    <article class="cartao-resumo resumo-cupons">
+                        <strong>1</strong>
+                        <span>Cupom disponível</span>
+                    </article>
+                </section>
+
+                <section class="secao-pedidos" id="pedidos" >
+                    <h2 id="titulo-pedidos">Meus pedidos recentes</h2>
+
+                    <article class="pedido">
+                        <img src="../img/pads-tonico.png" alt="Pote azul de pads faciais Medicube">
+                        <div class="detalhes-pedido">
+                            <h3>Discos Faciais Medicube Zero Pore Pad 2.0</h3>
+                            <p>Pedido #AT-2048 <span>·</span> 12/11/2025</p>
+                        </div>
+                        <span class="status status-enviado">Em trânsito</span>
+                        <strong class="preco">R$ 189,90</strong>
+                        <a class="botao botao-rastrear" href="rastreamento.html">Rastrear</a>
+                    </article>
+
+                    <article class="pedido">
+                        <img src="../img/fone-bluetooth.png" alt="Fone de ouvido bluetooth rosa">
+                        <div class="detalhes-pedido">
+                            <h3>Fone Bluetooth</h3>
+                            <p>Pedido #AT-2035 <span>·</span> 04/11/2025</p>
+                        </div>
+                        <span class="status status-processando">Processando</span>
+                        <strong class="preco">R$ 149,90</strong>
+                        <a class="botao botao-rastrear" href="rastreamento.html">Rastrear</a>
+                    </article>
+
+                    <article class="pedido">
+                        <img src="../img/serum-facial.png" alt="Frasco rosa de sérum facial">
+                        <div class="detalhes-pedido">
+                            <h3>Sérum Facial Glow</h3>
+                            <p>Pedido #AT-1987 <span>·</span> 28/10/2025</p>
+                        </div>
+                        <span class="status status-entregue">Entregue</span>
+                        <strong class="preco">R$ 89,90</strong>
+                        <a class="botao botao-avaliar" href="#avaliacao">Avaliar produto</a>
+                    </article>
+                </section>
+
+                <section class="enderecos" id="dados-pessoais" >
+                    <article class="cartao-endereco">
+                        <h2>Endereço principal</h2>
+                        <p>Rua das Flores, 123 - Apto 45<br>Centro, São Paulo - SP<br>CEP 01000-000</p>
+                        <a class="botao botao-editar" href="#editar-endereco">Editar</a>
+                    </article>
+                    <article class="cartao-endereco endereco-secundario">
+                        <h2>Dados pessoais</h2>
+                        <p>Guilherme Silva<br>guilherme@email.com<br>(11) 99999-0000</p>
+                        <a class="botao botao-editar" href="#editar-dados">Editar</a>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

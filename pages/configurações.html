@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerencie as configurações da sua conta Atlasway.">
+    <title>Configurações | Atlasway</title>
+    <link rel="stylesheet" href="../styles/configurações.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="home.html">
+            <img src="../img/logo.png" alt="Atlasway">
+        </a>
+
+        <a class="pagina-atual" href="configurações.html">Configuração</a>
+
+        <form class="busca" action="Produtos.html">
+            <label class="sr-only" for="busca-produto">Digite o produto</label>
+            <input id="busca-produto" type="search" placeholder="Digite o produto">
+            <button type="submit">⌕</button>
+        </form>
+
+        <nav class="atalhos">
+            <a class="atalho-configuracoes" href="configurações.html">⚙</a>
+            <a href="minhaConta.html" >♙</a>
+            <a href="pagamento.html" >🛒</a>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <div class="menu-lateral">
+            <nav>
+                <a class="selecionado" href="configurações.html">Configuração</a>
+                <a href="dados-pessoais.html">Dados pessoais</a>
+                <a href="login.html">Sair</a>     -
+            </nav>
+        </div>
+
+        <form class="configuracoes" >
+            <section class="cartao seguranca" id="seguranca">
+                <h1 id="titulo-seguranca">Segurança</h1>
+                <div class="linha-seguranca">
+                    <div>
+                        <h2>Senha</h2>
+                        <p>Última alteração há 3 meses</p>
+                    </div>
+                    <button class="botao botao-escuro" type="button">Alterar senha</button>
+                </div>
+                <div class="linha-seguranca">
+                    <div>
+                        <h2>Verificação em duas etapas</h2>
+                        <p>Mais proteção para seu login</p>
+                    </div>
+                    <label class="interruptor">
+                        <input type="checkbox">
+                        <span class="trilho"></span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="cartao notificacoes">
+                <h2 id="titulo-notificacoes">Notificação</h2>
+                <label class="linha-notificacao">
+                    <span>
+                        <strong>Atualizações do pedido</strong>
+                        <small>Envio, trânsito e entrega</small>
+                    </span>
+                    <span class="interruptor">
+                        <input type="checkbox" name="notificacao-pedidos">
+                        <span class="trilho"></span>
+                    </span>
+                </label>
+                <label class="linha-notificacao">
+                    <span>
+                        <strong>Promoções e cupons</strong>
+                        <small>Ofertas exclusivas por e-mail</small>
+                    </span>
+                    <span class="interruptor">
+                        <input type="checkbox" name="notificacao-promocoes">
+                        <span class="trilho"></span>
+                    </span>
+                </label>
+                <label class="linha-notificacao">
+                    <span>
+                        <strong>Lançamentos</strong>
+                        <small>Novidades das seções que você curte</small>
+                    </span>
+                    <span class="interruptor">
+                        <input type="checkbox" name="notificacao-lancamentos" checked>
+                        <span class="trilho" ></span>
+                    </span>
+                </label>
+                <label class="linha-notificacao">
+                    <span>
+                        <strong>Avisos por WhatsApp</strong>
+                        <small>Receba o rastreio no celular</small>
+                    </span>
+                    <span class="interruptor">
+                        <input type="checkbox" name="notificacao-whatsapp">
+                        <span class="trilho"></span>
+                    </span>
+                </label>
+            </section>
+
+            <section class="cartao preferencias">
+                <h2 id="titulo-preferencias">Preferências</h2>
+
+                <div class="linha-preferencia">
+                    <legend>Idioma</legend>
+                    <label><input type="radio" checked> Português (Brasil)</label>
+                </div>
+
+                <div class="linha-preferencia">
+                    <legend>Moeda</legend>
+                    <label><input type="radio" name="moeda" checked> Real (R$)</label>
+                </div>
+
+                <div class="linha-preferencia tema">
+                    <div>Tema do site</div>
+                    <div class="opcoes-tema">
+                        <label><input type="radio" name="tema" value="claro" checked><span>Claro</span></label>
+                        <label><input type="radio" name="tema" value="escuro"><span>Escuro</span></label>
+                        <label><input type="radio" name="tema" value="auto"><span>Auto</span></label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cartao privacidade">
+                <div class="cabecalho-privacidade">
+                    <h2 id="titulo-privacidade">Privacidade</h2>
+                    <label class="interruptor">
+                        <input type="checkbox" name="recomendacoes-personalizadas" checked>
+                        <span class="trilho" ></span>
+                    </label>
+                </div>
+                <div class="texto-privacidade">
+                    <h3>Recomendações personalizadas</h3>
+                    <p>Usar meu histórico para sugerir produtos</p>
+                    <h3>Meus dados</h3>
+                    <p>Seus dados ficam seguros e protegidos.</p>
+                </div>
+                <button class="botao botao-claro" type="button">Baixar dados</button>
+            </section>
+
+            <div class="acoes-formulario">
+                <button class="botao botao-cancelar" type="reset">Cancelar</button>
+                <button class="botao botao-escuro" type="submit">Salvar alterações</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
