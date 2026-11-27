@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 150px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+    margin-left:375px ;
+    gap: 10px;
+
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 170px;
+
+}
+
+input {
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px;
+    border: 2px solid #D0C3DF;
+}
+
+nav {
+    padding: 5px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid #D0C3DF ;
+    
+    align-items: center;
+    
+
+}
+
+.cards {
+    display:flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin: 70px;
+}
+
+.Acessórios, .casa, .Comida, .Eletrônicos, .Maquiagem, .pets, .skincare, .Navegue {
+    color: #3A1238;
+    height: 220px;
+    width: 200px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.skincare, .Eletrônicos, .Comida {
+    background: #FDE8E5;
+    border: 2px solid #3A1238;
+    
+    
+}
+
+.Maquiagem, .pets {
+    background: #D0C3DF;
+    border: 2px solid #3A1238;
+    
+}
+
+.Acessórios, .casa {
+    background: #AEE4E8;
+    border: 2px solid #3A1238;
+    
+}
+
+.Navegue {
+    border: 2px solid #3A1238;
+}
+
+#botao {
+    text-align: center;
+    border-radius: 12px;
+    width: 90px;
+    padding: 7px;
+    background: #AEE4E8;
+}
+
+button {
+
+    border-radius: 5px;
+    padding: 7px;
+    width: 200px;
+    border: 0;
+    color: #ffffff;
+    background: #6F1577;
+}
