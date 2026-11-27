@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #3A1238;
+    background: #eeeeee;
+}
+
+main {
+    background: #FFFFFF;
+    margin: auto;
+}
+
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 180px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3A1238;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+nav .conta {
+    background: #D0C3DF;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+.inicio {
+    padding: 45px 35px;
+    min-height: 270px;
+}
+
+.inicio h1 {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.inicio p {
+    font-size: 12px;
+    margin-top: 12px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.catalogo {
+    padding: 30px 35px 45px;
+}
+
+.catalogo h5,
+.funciona h5,
+.sobre h5 {
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.catalogo h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.produtos {
+    display: flex;
+    gap: 12px;
+}
+
+.card {
+    border: 1px solid #D0C3DF;
+    border-radius: 12px;
+    flex: 1;
+    overflow: hidden;
+    background: #FFFFFF;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imagem {
+    background: #FDEBE5;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card h4 {
+    font-size: 9px;
+    margin: 12px 10px 5px;
+}
+
+.card p {
+    font-size: 9px;
+    margin: 5px 10px 15px;
+    line-height: 1.5;
+}
+
+
+
+.funciona {
+    background: #FDEBE5;
+    padding: 35px;
+}
+
+.funciona h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 12px 0 40px;
+}
+
+.etapas {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.etapas::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    border-top: 3px dashed #000000;
+}
+
+
+.etapa {
+    position: relative;
+    z-index: 1;
+}
+
+.etapa span {
+    background: #AEE4E8;
+    border: 1px solid #555555;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.etapa p {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.sobre {
+    background: #D0C3DF;
+    padding: 35px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.sobre p {
+    font-size: 11px;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.logo-final img {
+    width: 190px;
+}
+
+
+footer {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 9px;
+}
+
+footer img {
+    width: 100px;
+}
