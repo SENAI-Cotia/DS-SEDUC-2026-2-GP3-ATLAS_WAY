@@ -13,10 +13,8 @@ body {
 
 main {
     background: #FFFFFF;
-    max-width: 1100px;
     margin: auto;
 }
-
 
 
 header {
@@ -67,9 +65,6 @@ nav .conta {
     line-height: 1.5;
 }
 
-
-
-
 .catalogo {
     padding: 30px 35px 45px;
 }
@@ -105,8 +100,6 @@ nav .conta {
 .card:hover {
     transform: translateY(-5px);
 }
-
-
 
 .imagem {
     background: #FDEBE5;
@@ -145,39 +138,51 @@ nav .conta {
 .funciona h2 {
     font-size: 25px;
     line-height: 1.3;
-    margin: 12px 0 35px;
+    margin: 12px 0 40px;
 }
 
 .etapas {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    position: relative;
 }
 
-.etapas div {
+
+
+.etapas::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    border-top: 3px dashed #000000;
+}
+
+
+.etapa {
     position: relative;
     z-index: 1;
 }
 
-.etapas span {
+.etapa span {
     background: #AEE4E8;
-    border: 1px solid #3A1238;
+    border: 1px solid #555555;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
-.etapas p {
-    font-size: 9px;
+.etapa p {
+    font-size: 10px;
+    font-weight: 600;
     margin-top: 10px;
 }
-
-
 
 
 .sobre {
@@ -209,8 +214,6 @@ nav .conta {
 }
 
 
-
-
 footer {
     padding: 12px 20px;
     display: flex;
@@ -223,4 +226,3 @@ footer {
 footer img {
     width: 100px;
 }
-
