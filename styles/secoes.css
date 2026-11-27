@@ -16,16 +16,16 @@ a {
 #icon {
     display: flex;
     align-items: center;
-    margin-left:375px ;
-    gap: 10px;
+    margin-left:675px ;
+    
 
 }
 
 #text {
     display: flex;
     align-items: center;
-    gap: 50px;
-    margin-left: 170px;
+    gap: 45px;
+    margin-left: 470px;
 
 }
 
@@ -41,10 +41,18 @@ nav {
     display: flex;
     gap: 30px;
     border-bottom: 2px solid #D0C3DF ;
-    
     align-items: center;
-    
+}
 
+.nav {
+    max-width: 2000px ;
+}
+
+i {
+    background: rgba(255, 255, 255, 0.712);
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 22px;
 }
 
 .cards {
@@ -52,6 +60,8 @@ nav {
     gap: 45px;
     flex-wrap: wrap;
     margin: 70px;
+    max-width: 1200px;
+    margin-left: 420px;    
 }
 
 .Acessórios, .casa, .Comida, .Eletrônicos, .Maquiagem, .pets, .skincare, .Navegue {
@@ -79,6 +89,13 @@ nav {
     background: #AEE4E8;
     border: 2px solid #3A1238;
     
+}
+
+.Navegue i {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
 }
 
 .Navegue {
